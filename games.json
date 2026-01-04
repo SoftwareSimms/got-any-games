@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Betrayal at Krondor",
+    "platforms": ["PC"],
+    "tags": ["RPG", "classic", "story"],
+    "why": "A cult 90s RPG with serious scope and restraint.",
+    "recommendedBy": "ACCU 25",
+    "wiki": "https://en.wikipedia.org/wiki/Betrayal_at_Krondor"
+  },
+  {
+    "title": "Tir na nÓg",
+    "platforms": ["ZX Spectrum", "Commodore 64"],
+    "tags": ["retro", "adventure", "myth"],
+    "why": "A genuinely odd, charming Celtic-myth adventure from the 80s.",
+    "recommendedBy": "ACCU 25",
+    "wiki": "https://en.wikipedia.org/wiki/Tir_Na_Nog_(video_game)"
+  }
+]

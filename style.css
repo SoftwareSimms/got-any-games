@@ -1,0 +1,7 @@
+body { font: 16px/1.5 system-ui, sans-serif; margin: 0; background: #0b0d10; color: #eef2ff; }
+.wrap { max-width: 860px; margin: 0 auto; padding: 28px 16px; }
+a { color: #7dd3fc; text-decoration: none; margin-right: 12px; }
+input { width: 100%; padding: 10px; border-radius: 10px; border: 1px solid #252b36; background: #12151b; color: inherit; }
+article { border: 1px solid #252b36; background: #12151b; border-radius: 12px; padding: 12px; margin: 12px 0; }
+small { color: #aab3c5; }
+footer { margin-top: 18px; color: #aab3c5; }
