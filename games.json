@@ -1,20 +1,55 @@
 [
-  {
-    "title": "Betrayal at Krondor",
-    "platforms": ["PC"],
-    "tags": ["RPG", "classic", "story"],
-    "why": "A cult 90s RPG with serious scope and restraint.",
-    "recommendedBy": "ACCU 25",
-    "wiki": "https://en.wikipedia.org/wiki/Betrayal_at_Krondor",
-    "image": "https://upload.wikimedia.org/wikipedia/en/4/4e/Betrayal_at_Krondor_Cover.jpg"
-  },
-  {
-    "title": "Tir na nÓg",
-    "platforms": ["ZX Spectrum", "Commodore 64"],
-    "tags": ["retro", "adventure", "myth"],
-    "why": "A genuinely odd, charming Celtic-myth adventure from the 80s.",
-    "recommendedBy": "ACCU 25",
-    "wiki": "https://en.wikipedia.org/wiki/Tir_Na_Nog_(video_game)",
-    "image": "https://upload.wikimedia.org/wikipedia/en/0/0c/Tir_na_nog_spectrum.png"
-  }
+    {
+        "title": "Betrayal at Krondor",
+        "platforms": ["PC"],
+        "tags": ["RPG", "classic", "story"],
+        "why": "A cult 90s RPG with serious scope and restraint.",
+        "recommendedBy": "ACCU 25",
+        "wiki": "https://en.wikipedia.org/wiki/Betrayal_at_Krondor"
+    },
+    {
+        "title": "Tir na nÓg",
+        "platforms": ["ZX Spectrum", "Commodore 64"],
+        "tags": ["retro", "adventure", "myth"],
+        "why": "A genuinely odd, charming Celtic-myth adventure from the 80s.",
+        "recommendedBy": "ACCU 25",
+        "wiki": "https://en.wikipedia.org/wiki/Tir_Na_Nog_(video_game)"
+    },
+    {
+        "title": "Not Tonight",
+        "platforms": ["PC", "Switch", "PS", "Xbox"],
+        "tags": ["narrative", "political", "indie"],
+        "why": "A quietly sharp narrative game about borders, paperwork, and moral fatigue.",
+        "recommendedBy": "ACCU 25",
+        "wiki": "https://en.wikipedia.org/wiki/Not_Tonight",
+        "image": "https://upload.wikimedia.org/wikipedia/en/6/6b/Not_Tonight_video_game_cover.png"
+    },
+    {
+        "title": "Blitzkrieg",
+        "platforms": ["PC"],
+        "tags": ["RTS", "strategy", "classic"],
+        "why": "A serious, methodical WWII RTS that rewards planning over reflexes.",
+        "recommendedBy": "ACCU 25",
+        "wiki": "https://en.wikipedia.org/wiki/Blitzkrieg_(video_game)",
+        "image": "https://upload.wikimedia.org/wikipedia/en/7/78/Blitzkrieg_cover.jpg"
+    },
+    {
+        "title": "Ace Attorney",
+        "platforms": ["DS", "Switch", "PC"],
+        "tags": ["visual-novel", "mystery", "cult"],
+        "why": "A cult courtroom series that proved dialogue and structure can carry a game.",
+        "recommendedBy": "ACCU 25",
+        "wiki": "https://en.wikipedia.org/wiki/Ace_Attorney",
+        "image": "https://upload.wikimedia.org/wikipedia/en/6/6a/Phoenix_Wright_Ace_Attorney_Cover.jpg"
+    },
+    {
+        "title": "Spelunky",
+        "platforms": ["PC", "PS", "Xbox", "Switch"],
+        "tags": ["roguelike", "platformer", "systems"],
+        "why": "A deceptively simple game that influenced a generation of systemic design.",
+        "recommendedBy": "ACCU 25",
+        "wiki": "https://en.wikipedia.org/wiki/Spelunky",
+        "image": "https://upload.wikimedia.org/wikipedia/en/4/4c/Spelunky_cover_art.png"
+    }
+
 ]
