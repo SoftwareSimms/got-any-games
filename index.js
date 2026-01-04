@@ -1,4 +1,5 @@
-// Load games from games.json, render them, and filter them with a search box.
+// index.js
+// Load games from games.json, render them as simple cards, and filter via the search box.
 
 const searchInput = document.getElementById("q");
 const listContainer = document.getElementById("list");
@@ -6,24 +7,33 @@ const listContainer = document.getElementById("list");
 let allGames = [];
 
 /**
- * Create one HTML card for a game.
+ * Build the HTML for one game entry.
+ * Intentionally simple: image, title, meta, why, tags, wikipedia link.
  */
-function renderGameCard(game) {
+function buildGameHtml(game) {
   const title = game.title || "";
   const platforms = (game.platforms || []).join(", ");
   const recommendedBy = game.recommendedBy || "";
   const why = game.why || "";
-  const tags = (game.tags || []).map(tag => `#${tag}`).join(" ");
+  const tags = game.tags || [];
   const wiki = game.wiki || "";
+  const image = game.image || "";
 
+  let tagsText = "";
+  if (tags.length > 0) {
+    tagsText = tags.map(function (t) { return "#" + t; }).join(" ");
+  }
+
+  // Note: if image is missing, the browser may show a broken image icon. That's fine.
   return `
     <article>
+      <img src="${image}" alt="${title} image">
       <strong>${title}</strong><br/>
       <small>${platforms}${recommendedBy ? " · " + recommendedBy : ""}</small>
 
       ${why ? `<p>${why}</p>` : ""}
 
-      ${tags ? `<small>${tags}</small><br/>` : ""}
+      ${tagsText ? `<small>${tagsText}</small><br/>` : ""}
 
       ${wiki ? `<a href="${wiki}" target="_blank" rel="noreferrer">Wikipedia</a>` : ""}
     </article>
@@ -31,7 +41,7 @@ function renderGameCard(game) {
 }
 
 /**
- * Render a list of games to the page.
+ * Render a list of games into the page.
  */
 function renderGames(gamesToRender) {
   if (gamesToRender.length === 0) {
@@ -39,15 +49,18 @@ function renderGames(gamesToRender) {
     return;
   }
 
-  const cardsHtml = gamesToRender.map(renderGameCard).join("");
-  listContainer.innerHTML = cardsHtml;
+  let html = "";
+  for (let i = 0; i < gamesToRender.length; i++) {
+    html += buildGameHtml(gamesToRender[i]);
+  }
+
+  listContainer.innerHTML = html;
 }
 
 /**
- * Convert a game into a big searchable string.
- * This makes search dead simple: just check if it includes the query.
+ * Convert a game to a single searchable string.
  */
-function buildSearchText(game) {
+function makeSearchableText(game) {
   const parts = [];
 
   parts.push(game.title || "");
@@ -60,37 +73,53 @@ function buildSearchText(game) {
 }
 
 /**
- * Filter games based on the search input.
+ * Filter games based on the current query.
  */
 function filterGames(query) {
-  const cleanedQuery = query.trim().toLowerCase();
+  const q = query.trim().toLowerCase();
 
-  // Empty query = show everything.
-  if (cleanedQuery === "") {
+  if (q === "") {
     return allGames;
   }
 
-  // Otherwise, show games whose combined text contains the query.
-  return allGames.filter(game => {
-    const searchText = buildSearchText(game);
-    return searchText.includes(cleanedQuery);
-  });
+  const filtered = [];
+
+  for (let i = 0; i < allGames.length; i++) {
+    const game = allGames[i];
+    const text = makeSearchableText(game);
+
+    if (text.includes(q)) {
+      filtered.push(game);
+    }
+  }
+
+  return filtered;
 }
 
 /**
- * Main: load data, render, then wire up search.
+ * Load games.json, then render.
  */
-fetch("games.json", { cache: "no-store" })
-  .then(response => response.json())
-  .then(games => {
-    allGames = games;
-    renderGames(allGames);
-  })
-  .catch(() => {
-    listContainer.innerHTML = `<article><small>Couldn’t load games.json.</small></article>`;
-  });
+function loadGames() {
+  fetch("games.json", { cache: "no-store" })
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      allGames = data;
+      renderGames(allGames);
+    })
+    .catch(function () {
+      listContainer.innerHTML = `<article><small>Couldn’t load games.json.</small></article>`;
+    });
+}
 
-searchInput.addEventListener("input", () => {
+/**
+ * Wire up search input.
+ */
+searchInput.addEventListener("input", function () {
   const filtered = filterGames(searchInput.value);
   renderGames(filtered);
 });
+
+// Start
+loadGames();
