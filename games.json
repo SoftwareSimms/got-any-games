@@ -1,48 +1,74 @@
 [
-    {
-        "title": "Betrayal at Krondor",
-        "platforms": ["PC"],
-        "tags": ["RPG", "classic", "story"],
-        "why": "A cult 90s RPG with serious scope and restraint.",
-        "recommendedBy": "ACCU 25",
-        "wiki": "https://en.wikipedia.org/wiki/Betrayal_at_Krondor",
-        "image": "https://upload.wikimedia.org/wikipedia/en/2/20/Betrayal_at_Krondor6.jpg"
-    },
-    {
-        "title": "Tir Na nÓg",
-        "platforms": ["ZX Spectrum", "Commodore 64"],
-        "tags": ["retro", "adventure", "myth"],
-        "why": "A genuinely odd, charming Celtic-myth adventure from the 80s.",
-        "recommendedBy": "ACCU 25",
-        "wiki": "https://en.wikipedia.org/wiki/Tir_Na_Nog_(video_game)",
-        "image": "https://upload.wikimedia.org/wikipedia/en/9/9a/Tir_Na_Nog_cover.jpg"
-    },
-    {
-        "title": "Not Tonight",
-        "platforms": ["PC", "Switch", "PS", "Xbox"],
-        "tags": ["narrative", "political", "indie"],
-        "why": "A quietly sharp narrative game about borders, paperwork, and moral fatigue.",
-        "recommendedBy": "ACCU 25",
-        "wiki": "https://en.wikipedia.org/wiki/Not_Tonight",
-        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Not_Tonight_Video_Game_Logo.jpg/417px-Not_Tonight_Video_Game_Logo.jpg"
-    },
-    {
-        "title": "Blitzkrieg",
-        "platforms": ["PC"],
-        "tags": ["RTS", "strategy", "classic"],
-        "why": "A serious, methodical WWII RTS that rewards planning over reflexes.",
-        "recommendedBy": "ACCU 25",
-        "wiki": "https://en.wikipedia.org/wiki/Blitzkrieg_(video_game)",
-        "image": "https://upload.wikimedia.org/wikipedia/en/2/21/Blitzkrieg_box.jpg"
-    },
-    {
-        "title": "Spelunky",
-        "platforms": ["PC", "PS", "Xbox", "Switch"],
-        "tags": ["roguelike", "platformer", "systems"],
-        "why": "A deceptively simple game that influenced a generation of systemic design.",
-        "recommendedBy": "ACCU 25",
-        "wiki": "https://en.wikipedia.org/wiki/Spelunky",
-        "image": "https://upload.wikimedia.org/wikipedia/en/5/5b/Spelunky.jpg"
-    }
-
+  {
+    "title": "Betrayal at Krondor",
+    "platforms": ["PC"],
+    "tags": ["RPG", "classic", "story"],
+    "why": "A surprisingly large and patient RPG from the early 90s, focused on writing, world-building, and consequence rather than spectacle. It trusts the player to read, think, and explore at their own pace, which feels rare even now.",
+    "recommendedBy": "ACCU 25",
+    "wiki": "https://en.wikipedia.org/wiki/Betrayal_at_Krondor",
+    "image": "https://upload.wikimedia.org/wikipedia/en/2/20/Betrayal_at_Krondor6.jpg"
+  },
+  {
+    "title": "Tir Na nÓg",
+    "platforms": ["ZX Spectrum", "Commodore 64"],
+    "tags": ["retro", "adventure", "myth"],
+    "why": "A strange and ambitious early adventure game rooted in Celtic mythology. More about atmosphere and curiosity than mechanics, and impressive in how much it attempts on extremely limited hardware.",
+    "recommendedBy": "ACCU 25",
+    "wiki": "https://en.wikipedia.org/wiki/Tir_Na_Nog_(video_game)",
+    "image": "https://upload.wikimedia.org/wikipedia/en/9/9a/Tir_Na_Nog_cover.jpg"
+  },
+  {
+    "title": "Not Tonight",
+    "platforms": ["PC", "Switch", "PS", "Xbox"],
+    "tags": ["narrative", "political", "indie"],
+    "why": "A bleak but grounded narrative game that turns mundane systems like paperwork and queues into genuine sources of tension. It’s not subtle, but it’s deliberate, and it sticks with you longer than you expect.",
+    "recommendedBy": "ACCU 25",
+    "wiki": "https://en.wikipedia.org/wiki/Not_Tonight",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Not_Tonight_Video_Game_Logo.jpg/417px-Not_Tonight_Video_Game_Logo.jpg"
+  },
+  {
+    "title": "Blitzkrieg",
+    "platforms": ["PC"],
+    "tags": ["RTS", "strategy", "classic"],
+    "why": "A slower, more methodical WWII RTS that prioritises positioning, preparation, and attrition over rapid micromanagement. Less flashy than its peers, but more considered.",
+    "recommendedBy": "ACCU 25",
+    "wiki": "https://en.wikipedia.org/wiki/Blitzkrieg_(video_game)",
+    "image": "https://upload.wikimedia.org/wikipedia/en/2/21/Blitzkrieg_box.jpg"
+  },
+  {
+    "title": "Spelunky",
+    "platforms": ["PC", "PS", "Xbox", "Switch"],
+    "tags": ["roguelike", "platformer", "systems"],
+    "why": "A game that looks simple and then quietly punishes every assumption you make. Its influence on modern systemic design is obvious, but it still feels personal, harsh, and oddly fair.",
+    "recommendedBy": "ACCU 25",
+    "wiki": "https://en.wikipedia.org/wiki/Spelunky",
+    "image": "https://upload.wikimedia.org/wikipedia/en/5/5b/Spelunky.jpg"
+  },
+  {
+    "title": "Viva Piñata: Trouble in Paradise",
+    "platforms": ["Xbox 360"],
+    "tags": ["simulation", "cozy", "systems"],
+    "why": "A deceptively deep garden management game wrapped in bright colours and animal puns. Underneath the charm is a surprisingly complex web of systems that reward patience and observation.",
+    "recommendedBy": "Personal pick",
+    "wiki": "https://en.wikipedia.org/wiki/Viva_Pi%C3%B1ata:_Trouble_in_Paradise",
+    "image": "https://upload.wikimedia.org/wikipedia/en/a/a0/Viva_Pinata_Trouble_in_Paradise.jpg"
+  },
+  {
+    "title": "The Outfit",
+    "platforms": ["Xbox 360", "PS2"],
+    "tags": ["action", "sandbox", "overlooked"],
+    "why": "A scrappy, destructive WWII action game that leaned into environmental chaos long before it was fashionable. Messy, uneven, but memorable in ways more polished games often aren’t.",
+    "recommendedBy": "Personal pick",
+    "wiki": "https://en.wikipedia.org/wiki/The_Outfit_(video_game)",
+    "image": "https://upload.wikimedia.org/wikipedia/en/c/cb/The_Outfit_Coverart.png"
+  },
+  {
+    "title": "Cel Damage",
+    "platforms": ["Xbox", "GameCube", "PS2"],
+    "tags": ["racing", "arcade", "cartoon"],
+    "why": "A loud, silly arcade combat racer with a strong visual identity and no interest in realism. It knew exactly what it was and didn’t apologise for it.",
+    "recommendedBy": "Personal pick",
+    "wiki": "https://en.wikipedia.org/wiki/Cel_Damage",
+    "image": "https://upload.wikimedia.org/wikipedia/en/a/a6/Cel_Damage.jpg"
+  }
 ]
